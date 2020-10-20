@@ -8,7 +8,6 @@ public class RationalClient {
         // of the numerator and denominator directly
         System.out.println(r.numerator);
         System.out.println(r.denominator);
-
         // Rational s = new Rational(1, 3);
         // System.out.println(s);
         // Rational t = Rational.add(r, s);
