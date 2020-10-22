@@ -59,20 +59,25 @@ public class Rational
     // and returns a Rational equal to the difference
     public static Rational subtract(Rational r, Rational s)
     {
-        // REPLACE WITH YOUR CODE HERE
-        return null;
+        int newNumerator = r.numerator*s.denominator - s.numerator*r.denominator;
+        int newDenominator = r.denominator*s.denominator; 
+        Rational x = new Rational(newNumerator, newDenominator);
+        return simplify(x);
     }
     
     public static Rational multiply(Rational r, Rational s)
     {
-        // REPLACE WITH YOUR CODE HERE
-        return null;
+        int newNumerator = r.numerator * s.numerator;
+        int newDenominator = r.denominator * s.denominator;
+        Rational x = new Rational(newNumerator, newDenominator);
+        return simplify(x);
     }
-    
     public static Rational divide(Rational r, Rational s)
     {
-        // REPLACE WITH YOUR CODE HERE
-        return null;
+        int newNumerator = r.numerator * s.denominator;
+        int newDenominator = r.denominator * s.numerator;
+        Rational x = new Rational(newNumerator, newDenominator);
+        return simplify(x);
     }
 
 
